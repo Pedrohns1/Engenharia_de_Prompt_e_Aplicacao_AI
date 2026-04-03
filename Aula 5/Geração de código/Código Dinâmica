@@ -1,0 +1,36 @@
+Resultado do Prompt Vago: A IA geralmente entrega um código minimalista, muitas vezes sem função definida ou tratamento de erros.
+
+Python
+numeros = [1, 2, 3, 4, 5]
+soma = sum(numeros)
+print(soma)
+
+
+Resultado do Prompt Refinado: A IA entrega uma função robusta e pronta para produção.
+
+Python
+def calcular_soma_lista(lista_numeros):
+    # Valida se a entrada é uma lista
+    if not isinstance(lista_numeros, list):
+        return "Erro: A entrada deve ser uma lista."
+
+    # Valida se a lista está vazia antes de calcular
+    if len(lista_numeros) == 0:
+        return 0
+
+    # Calcula e retorna a soma dos elementos
+    return sum(lista_numeros)
+
+Análise da Tarefa: O refinamento melhora a utilidade ao prever casos de falha (lista vazia ou tipo incorreto) e encapsular a lógica em uma função reutilizável. Os comentários transformam o código cru em um artefato manutenível.
+
+
+Síntese de Boas Práticas:
+Com base nas dinâmicas acima, os elementos que trazem maior precisão ao desenvolvimento de sistemas são:
+
+Contexto e Papel: Dizer à IA quem ela é ou para quem está escrevendo (ex: "para desenvolvedores iniciantes").
+
+Restrições Técnicas Explicitas: Citar a linguagem, biblioteca ou framework exato (ex: "em JavaScript", "usando unittest").
+
+Formatação de Saída: Exigir tabelas, listas ou marcações específicas para organizar a informação visualmente.
+
+Cobertura de Casos Limites: Não pedir apenas a lógica principal, mas exigir validações e tratamentos de erro (ex: "valide se a lista está vazia").
